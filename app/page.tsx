@@ -1,103 +1,51 @@
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+import MenuBar from "@/components/MenuBar"
+import Footer from "@/components/Footer"
+export default function IndexPage() {
+  return ( 
+  <div>
+  <MenuBar/>
+  <div className="alert alert-primary" role="alert">
+    <h1>เว็บยังไม่เสร็จนะครับ</h1> 
+  </div>
+  {/*section1*/}
+  <div className="section1-box">
+    <h1 className="section1-name" barriecito-regular>Hey l'm Wipu</h1>
+    <p className="section1-meta-data cascadia-mono-uniquifier">
+      มหาวิทยาลัยรามงคลกรุงเทพ <br />
+    </p>
+    <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t51.75761-15/491459848_18324807223166634_5955574808682799577_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGZfUyMRP74zJ1Bi_-R-By6l61FM_Mh9GuXrUUz8yH0a9L4FzfgL0LKJV5PK4mHQv7dPsUHpnx_FXezqjHp6NDS&_nc_ohc=vXYGuASiUScQ7kNvwGygL3V&_nc_oc=Adm-A9Ii3wAUKxYyeImgUDw4GiCasX-y5VtL-V9vvY1BB6TxXxOmhCrdQ-IDV1hMyao&_nc_zt=23&_nc_ht=scontent.fbkk10-1.fna&_nc_gid=f-eDJsuk003aHJ2D8ZjlkQ&oh=00_AfHLIJFh8VafMTSosF1JmWNuCDHtNresPJfoizPIE9PZ7g&oe=681A1185" />
+    <p className="section1-profile-description barriecito-regular"> 
+      ชอบนอนดึก<br />
+      อยากกินข้าว
+    </p>
+    <p className="section1-profile-description barriecito-regular"> 
+      ชอบนอนดึก<br />
+      อยากกินข้าว
+    </p>
+  </div> 
+  {/*section2*/}
+  <div className="section2-box">
+    <a className="section2-contact-link pacifico-regular" href="https://www.facebook.com/wiwipon.kanchana.5">Facebook</a>
+    <br />
+    <a className="section2-contact-link pacifico-regular" href="https://www.instagram.com/wipon_kanchana/">Instagram</a>
+  </div>
+  {/*section3*/}
+  <div className="section3-box">
+    <div className="section3-box-a">
+      <h1 className="section3-box-a-study">ศึกษา</h1>
+      <p className="section3-box-a-study1">กำลังศึกษาอยู่ปีที่3 สาขาวัฒกรรมระบบสารสนเทศ<br />
+        คณะบริหารธุรกิจ มหาวิทยาลัยราชมงคลกรุงเทพ </p>   
     </div>
-  );
+    <div className="section3-box-b">
+      <h1 className="section3-box-b-work">ฝึกงาน</h1>
+      <p className="section3-box-b-work1">เรียน ปวส วิทยาลัยเทคนิคครนายก<br />
+        ฝึกงานที่โรงเรียนนายร้อย
+      </p>
+    </div>
+  
+</div>
+<Footer/>
+ </div>
+ 
+  )
 }
